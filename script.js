@@ -9,7 +9,7 @@ const selects = [
   document.getElementById('choice3'),
 ];
 
-fetch('projects.csv')
+fetch('data/projects.csv')
   .then(response => response.text())
   .then(csvText => {
     const results = Papa.parse(csvText.trim(), {
